@@ -105,6 +105,7 @@ hr{
 .profile-stats small{
     color:  hsl(0, 0%, 59%);
     font-weight: 400;
+    letter-spacing: 2px;
 }
 
 @media(max-width: 1400px){
