@@ -88,6 +88,7 @@ hr{
 .profile-info span{
     color: hsl(227, 10%, 46%);
     font-weight: 400;
+    margin-left: 2%;
 }
 .stats-container{
     position: relative;
