@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    overflow: hidden;
+}
+html{
+    position: relative;
+}
+
+body{
+    background-color: hsl(185, 75%, 39%);
+    font-family: "Kumbh Sans", sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 100vh;
+}
+hr{
+    position: relative;
+    bottom: 35px;
+    opacity: 0.2;
+    color:  hsl(0, 0%, 59%);
+    margin: 0;
+}
+.background-top{
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    z-index: -1;
+}
+.background-bottom{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+}
+.sr-only {
+    position: absolute;
+    top: auto;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+}
+.card-container{
+    background-color: white;
+    max-width: 25%;
+    height: 450px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+.background-card{
+    width: 100%;
+}
+.background-card img{
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+}
+.profile-img{
+    background-image: url("images/image-victor.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.profile-info{
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+}
+.profile-info p{
+    color:  hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+.profile-info span{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+.stats-container{
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.profile-stats h2{
+    /* margin-right: 80px; */
+    margin: 30px 0 10px 0;
+}
+.profile-stats small{
+    color:  hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+
+@media(max-width: 1400px){
+    .card-container{
+        max-width: none;
+        min-width: 25%;
+    }
+}
